@@ -14,6 +14,16 @@ window.onload = function () {
       domainList.innerHTML = "";
 
       // Write the code here
+      let domains = [];
+      for (let pronoun of pronouns) {
+        for (let adjective of adjectives) {
+          for (let noun of nouns) {
+            for (let extension of extensions) {
+              domains.push(`${pronoun}${adjective}${noun}${extension}`);
+            }
+          }
+        }
+      }
       // Create a new array named 'domains' and push all the domain permutations in it
 
       // Display the results
